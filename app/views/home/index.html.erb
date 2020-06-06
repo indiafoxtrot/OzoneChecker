@@ -1,0 +1,15 @@
+<div class="jumbotron <%= @api_color %>">
+  <h1>Hello There, your currently ozone level in <%= @area_location %> is <%= @final_output %></h1>
+  <p><%= @api_description %></p>
+  <%= form_tag zipcode_path, :method => 'POST' do %>
+    <div class="form-inline my-2 my-lg-0">
+    <%= text_field_tag 'zipcode', nil, placeholder: " Search Zipcode", class: "form-control mr-sm-2" %>
+    <%= submit_tag 'Search', class: 'btn btn-outline-secondary my-2 my-sm-0' %>
+    <% end %>
+    
+</div>
+<br/>
+<p><a class="btn btn-secondary btn-lg" href="http://localhost:3000/#" role="button">Refresh Ozone Level</a></p>
+
+
+
