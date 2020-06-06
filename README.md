@@ -1,7 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a app to display and comment about your ozone level.
+Soon I will add how to run the service.
 
 Things you may want to cover:
 
