@@ -17,7 +17,7 @@ class HomeController < ApplicationController
   else
     @final_output = @output[0]['AQI']
   end
-  
+
 
   if @final_output == "Please Insert a Valid Postal Code"
     @api_color = "silver"
@@ -44,6 +44,7 @@ class HomeController < ApplicationController
 
   end
 
+  
   end
 
   def zipcode
@@ -71,6 +72,7 @@ class HomeController < ApplicationController
     @final_output = @output[0]['AQI']
   end
   
+
 
   if @final_output == "Please Insert a Valid Postal Code"
     @api_color = "silver"
